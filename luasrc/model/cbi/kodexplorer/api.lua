@@ -10,7 +10,7 @@ local appname = "kodexplorer"
 local api_url = "https://api.kodcloud.com/?app/version"
 
 local wget = "/usr/bin/wget"
-local wget_args = { "--no-check-certificate", "--quiet", "--timeout=10", "--tries=2" }
+local wget_args = { "--no-check-certificate", "--quiet", "--timeout=10" }
 local command_timeout = 300
 
 local function _unpack(t, i)
@@ -103,7 +103,7 @@ local function get_api_json(url)
     --	function(chunk) output[#output + 1] = chunk end)
     -- local json_content = util.trim(table.concat(output))
 
-    local json_content = sys.exec(wget .. " --no-check-certificate --timeout=10 -t 1 -O- " .. url)
+    local json_content = sys.exec(wget .. " --no-check-certificate --timeout=10 -O- " .. url)
 
     if json_content == "" then return {} end
 
