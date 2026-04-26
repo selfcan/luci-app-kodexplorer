@@ -1,11 +1,17 @@
 {
 	"luci-app-kodexplorer": {
-		"description": "Grant UCI access for luci-app-kodexplorer",
+		"description": "Grant UCI and Service access for kodexplorer",
 		"read": {
-			"uci": [ "kodexplorer" ]
+			"uci": [ "kodexplorer" ],
+			"sys": [ "luci.sys.call" ]
 		},
 		"write": {
 			"uci": [ "kodexplorer" ]
+		},
+		"role": {
+			"management": {
+				"services": [ "kodexplorer" ]
+			}
 		}
 	}
 }

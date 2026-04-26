@@ -72,5 +72,8 @@ o.template = "kodexplorer/download"
 o.inputstyle = "apply"
 o.btnclick = "downloadClick(this);"
 o.id = "download_btn"
+m.on_after_commit = function(self)
+    luci.sys.call("/etc/init.d/kodexplorer restart >/dev/null 2>&1")
+end
 
 return m
