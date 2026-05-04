@@ -15,7 +15,7 @@ LUCI_DEPENDS:=+nginx +unzip +zoneinfo-asia +php8 +php8-cgi +php8-fpm \
 	+php8-mod-xml +php8-mod-intl
 LUCI_PKGARCH:=all
 PKG_VERSION:=1
-PKG_DATE:=20260424
+PKG_DATE:=20260504
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
