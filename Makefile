@@ -6,7 +6,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for KodExplorer
-LUCI_DEPENDS:=LUCI_DEPENDS:=+nginx +unzip +zoneinfo-asia +php8-cgi +php8-cli +php8-fpm \
+LUCI_DEPENDS:=+nginx +unzip +zoneinfo-asia +php8-cgi +php8-cli +php8-fpm \
   +php8-mod-bcmath +php8-mod-curl +php8-mod-dom +php8-mod-exif \
   +php8-mod-ftp +php8-mod-gd +php8-mod-gettext +php8-mod-intl +php8-mod-ldap \
   +php8-mod-mbstring +php8-mod-mysqli +php8-mod-mysqlnd +php8-mod-opcache \
