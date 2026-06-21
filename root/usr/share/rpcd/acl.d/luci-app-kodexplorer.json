@@ -3,7 +3,7 @@
 		"description": "Grant UCI and Service access for kodexplorer",
 		"read": {
 			"uci": [ "kodexplorer" ],
-			"sys": [ "luci.sys.call" ]
+			"sys": [ "luci.sys.call", "luci.sys.exec" ]
 		},
 		"write": {
 			"uci": [ "kodexplorer" ]
