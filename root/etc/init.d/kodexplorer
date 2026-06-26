@@ -87,6 +87,7 @@ gen_php_config() {
 	memory_limit=$(config_t_get global memory_limit)
 	post_max_size=$(config_t_get global post_max_size)
 	upload_max_filesize=$(config_t_get global upload_max_filesize)
+	project_directory=$(config_t_get global project_directory)
 	
     [ -f "$PHP_CONFIG" ] && cp $PHP_CONFIG $PHP_BACKUP_CONFIG
 
@@ -97,7 +98,7 @@ gen_php_config() {
 		output_buffering = Off
 		zlib.output_compression = Off
 		implicit_flush = Off
-		open_basedir = $storage_device_path:/tmp/:/proc/:/usr/bin/
+		open_basedir = $project_directory:$storage_device_path:/tmp/:/proc/:/usr/bin/
 		disable_functions =
 		memory_limit = $memory_limit
 		post_max_size = $post_max_size
