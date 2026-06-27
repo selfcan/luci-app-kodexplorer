@@ -1,5 +1,5 @@
 config global
-    option port '8080'                              # Nginx HTTP 端口
+    option port '8181'                              # Nginx HTTP 端口
     option https_enable '0'                         # 是否启用 HTTPS（1 启用，0 不启用）
     option https_port '8443'                        # Nginx HTTPS 端口
     option storage_device_path '/opt/kodexplorer/'  # 存储设备路径
