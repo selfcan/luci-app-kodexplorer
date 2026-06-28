@@ -13,7 +13,7 @@ o.rmempty = false
 
 o = s:option(Value, "port", translate("Nginx HTTP端口"))
 o.datatype = "port"
-o.default = 8081
+o.default = 8181
 o.rmempty = false
 
 -- 新增 HTTPS 开关
